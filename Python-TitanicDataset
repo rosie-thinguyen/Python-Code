@@ -1,0 +1,22 @@
+# Python-TitanicProject
+# Data analysis of Titanic dataset
+
+
+# Import data as pandas 
+import pandas as pd
+df = pd.read_csv ( 'Link')
+
+
+
+# Analyse and calculate the dataset
+print ( ' All unique values of sex :  ', df['Sex'].unique ())
+
+print ( ' Min, max vlues of fare : ', [ df['Fare'].min ()  ,  df['Fare'].max() ])
+
+print ( ' Standard Deviation and Sum : ', [ df['Fare'].std(), df['Fare'].sum () ])
+
+print ( ' Count and NUunique: ', [df['Sex'].count(), df['Sex'].nunique () ])
+
+print ( ' Mean and Median: ', [df['Fare'].mean(), df['Fare'].median() ])
+
+print ( ' Quantile 25% and 75%: ', [df['Fare'].quantile(0.25), df['Fare'].quantile(0.75) ] )
