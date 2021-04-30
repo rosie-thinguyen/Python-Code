@@ -4,7 +4,7 @@
 
 # Import data as pandas 
 import pandas as pd
-df = pd.read_csv ( 'Link')
+df = pd.read_csv ( 'C:/.../')
 
 
 
@@ -20,3 +20,17 @@ print ( ' Count and NUunique: ', [df['Sex'].count(), df['Sex'].nunique () ])
 print ( ' Mean and Median: ', [df['Fare'].mean(), df['Fare'].median() ])
 
 print ( ' Quantile 25% and 75%: ', [df['Fare'].quantile(0.25), df['Fare'].quantile(0.75) ] )
+
+
+
+# Display the calculation as a table for better visualisation
+# For the Categorical data
+display (df.describe (include = 'object'))
+
+# For the Numberical data
+display (df.describe (include = 'number'))
+
+
+
+
+
